@@ -72,6 +72,9 @@ do
         core/bin/rsync-ssl)
             run $item --help
             ;;
+        core/bin/onig-config)
+            run $item --version
+            ;;
         *)
             run $item --help
             run $item --version

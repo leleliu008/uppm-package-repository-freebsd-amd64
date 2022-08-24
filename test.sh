@@ -78,6 +78,8 @@ do
         core/bin/pcre2-config)
             run $item --version
             ;;
+        core/bin/zstdgrep)
+            ;;
         *)
             run $item --help
             run $item --version

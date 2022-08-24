@@ -75,6 +75,9 @@ do
         core/bin/onig-config)
             run $item --version
             ;;
+        core/bin/pcre2-config)
+            run $item --version
+            ;;
         *)
             run $item --help
             run $item --version

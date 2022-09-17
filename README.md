@@ -1,4 +1,4 @@
-# ppkg-core-freebsd-x86_64
+# uppm-package-repository-freebsd-x86_64
 
 these tools are created by [ppkg](https://github.com/leleliu008/ppkg).
 

@@ -31,7 +31,7 @@ export PATH="$PWD/core/bin:$PATH"
 
 printf '%s\n' "$PATH" | tr ':' '\n'
 
-for item in core/bin/*
+for item in core/bin/* core/sbin/*
 do
     case $item in
         core/bin/c_rehash)
@@ -78,13 +78,77 @@ do
         core/bin/optscript)
             run $item --help
             ;;
-        core/bin/onig-config)
+        core/bin/gpgparsemail)
+            run $item --help
+            ;;
+        core/bin/strace-log-merge)
+            run $item --help
+            ;;
+        core/bin/darkhttpd)
+            run $item --help
+            ;;
+        core/bin/plink)
             run $item --version
             ;;
-        core/bin/pcre2-config)
+        core/bin/pscp)
             run $item --version
             ;;
-        core/bin/zstdgrep)
+        core/bin/psftp)
+            run $item --version
+            ;;
+        core/bin/mosh)
+            ;;
+        core/bin/tmux)
+            ;;
+        core/bin/unrar)
+            ;;
+        core/bin/qjs)
+            ;;
+        core/bin/qjsc)
+            ;;
+        core/bin/qjscalc)
+            ;;
+        core/bin/curlie)
+            ;;
+        core/bin/ctop)
+            run $item --help
+            run $item -v
+            ;;
+        core/bin/hugo)
+            run $item --help
+            run $item version
+            ;;
+        core/bin/youtubedr)
+            run $item --help
+            run $item version
+            ;;
+        core/bin/mpg123-strip)
+            run $item --help
+            ;;
+        core/bin/mpg123-id3dump)
+            run $item --help
+            ;;
+        core/bin/rtmpdump)
+            run $item --help
+            ;;
+        core/sbin/rtmpgw)
+            run $item --help
+            ;;
+        core/sbin/rtmpsrv)
+            ;;
+        core/sbin/rtmpsuck)
+            ;;
+        core/sbin/addgnupghome)
+            ;;
+        core/sbin/applygnupgdefaults)
+            ;;
+        core/sbin/nologin)
+            ;;
+        core/bin/zlib-flate)
+            run $item --version
+            ;;
+        core/bin/fix-qdf)
+            run $item --version
             ;;
         *)
             run $item --help

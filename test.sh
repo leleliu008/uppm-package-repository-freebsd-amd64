@@ -144,6 +144,14 @@ do
             ;;
         core/sbin/nologin)
             ;;
+        core/bin/zstdgrep)
+            ;;
+        core/bin/onig-config)
+            run $item --version
+            ;;
+        core/bin/pcre2-config)
+            run $item --version
+            ;;
         core/bin/zlib-flate)
             run $item --version
             ;;
